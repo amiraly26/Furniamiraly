@@ -155,23 +155,6 @@ svg {
   text-decoration: none;
 }
 
-.collection-list__item a:not([href*="/create"]),
-.dashboard__card a:not([href*="/create"]) {
-  display: flex !important;
-  min-width: 0;
-  flex: 1 1 auto !important;
-  align-items: center;
-  color: #111815 !important;
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
-  opacity: 1 !important;
-  overflow: visible !important;
-  text-indent: 0 !important;
-  visibility: visible !important;
-  white-space: normal !important;
-}
-
 .collection-list__item a[href*="/create"],
 .dashboard__card a[href*="/create"] {
   display: inline-grid !important;
