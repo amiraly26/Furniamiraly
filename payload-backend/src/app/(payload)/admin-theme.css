@@ -180,6 +180,87 @@ svg {
   text-decoration: none;
 }
 
+/* Payload has an optional dashboard edit mode for adding admin widgets.
+   These controls are only for the CMS dashboard, so they are styled as quiet admin tools. */
+.dashboard [type="button"],
+.dashboard button,
+.dashboard .btn {
+  display: inline-flex !important;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 13px;
+  background: #ffffff;
+  border: 1px solid #cfd9d3;
+  border-radius: 7px;
+  color: #17211c;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1;
+}
+
+.dashboard [type="button"]:hover,
+.dashboard button:hover,
+.dashboard .btn:hover {
+  background: #edf4ef;
+  border-color: #a9c3b3;
+}
+
+body:has(.dashboard) [role="dialog"] {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  z-index: 1000 !important;
+  width: min(92vw, 440px) !important;
+  max-height: min(82vh, 620px) !important;
+  padding: 24px !important;
+  overflow: auto !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid #dce6df !important;
+  border-radius: 12px !important;
+  box-shadow: 0 24px 70px rgba(17, 24, 21, 0.18) !important;
+  color: #111815 !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+body:has(.dashboard) [role="dialog"] h1,
+body:has(.dashboard) [role="dialog"] h2 {
+  margin: 0 0 16px !important;
+  font-size: 24px !important;
+  font-weight: 760 !important;
+  line-height: 1.15 !important;
+}
+
+body:has(.dashboard) [role="dialog"] input {
+  width: 100% !important;
+  min-height: 38px !important;
+  padding: 0 12px !important;
+  border: 1px solid #cfd9d3 !important;
+  background: #ffffff !important;
+  color: #111815 !important;
+  font-size: 14px !important;
+}
+
+body:has(.dashboard) [role="dialog"] ul,
+body:has(.dashboard) [role="dialog"] ol {
+  display: grid !important;
+  gap: 10px !important;
+  margin: 16px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+body:has(.dashboard) [role="dialog"] li {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 12px !important;
+  border: 1px solid #dde5e0 !important;
+  border-radius: 8px !important;
+  background: #f8fbf9 !important;
+}
+
 .btn,
 button {
   border-radius: 7px;
