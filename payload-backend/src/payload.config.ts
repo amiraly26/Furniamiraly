@@ -23,6 +23,9 @@ const frontendURL = process.env.FRONTEND_URL || 'http://localhost:3000'
 export default buildConfig({
   admin: {
     user: Users.slug,
+    dashboard: {
+      widgets: [],
+    },
     importMap: {
       baseDir: path.resolve(dirname),
     },
