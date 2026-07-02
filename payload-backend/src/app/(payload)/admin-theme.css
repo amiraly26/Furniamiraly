@@ -113,6 +113,64 @@ svg {
   display: block;
 }
 
+.dashboard .collection-list {
+  display: none !important;
+}
+
+.admin-collection-shortcuts {
+  margin-top: 34px;
+}
+
+.admin-collection-shortcuts h2 {
+  margin: 0 0 14px;
+  color: #111815;
+  font-size: 22px;
+  font-weight: 720;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.admin-collection-shortcuts__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  width: 100%;
+  background: #ffffff;
+}
+
+.admin-collection-shortcuts__item {
+  display: flex;
+  min-height: 128px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px 16px;
+  color: #111815;
+}
+
+.admin-collection-shortcuts__item a {
+  color: #111815;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.admin-collection-shortcuts__item a:hover {
+  color: #176845;
+}
+
+.admin-collection-shortcuts__create {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
+  color: #2c3a31 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
 .collection-list {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
