@@ -1,0 +1,215 @@
+@reference "../globals.css";
+
+/*---------pop---*/
+@keyframes pop {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(1);
+    }
+}
+
+/*------header styling-------*/
+
+/*breadcrumbs*/
+#page-header {
+    @apply flex flex-col overflow-hidden pt-4 pb-10 gap-10 lg:p-0
+}
+
+#page-header .breadcrumbs {
+    @apply pl-8 flex flex-row text-[12px] text-[var(--primary)]/60 lg:hidden;
+    font-family: var(--font-inter);
+    >span {
+        @apply text-[12px] flex flex-row items-center justify-center;
+    } 
+}
+/*breadcrumbs*/
+
+#page-header header {
+    @apply flex flex-col gap-6 px-8 ;
+}
+#page-header header h2 {
+    @apply text-[44px] text-center;
+}
+
+/*process steps styling*/
+
+
+
+/*-----main-------*/
+
+main {
+    @apply max-w-[1200px] flex flex-col items-center gap-[24px] flex-none px-8 lg:pt-[80px] lg:flex-row md:gap-[64px] lg:items-stretch;
+}
+
+
+/*--product table header*/
+main .product-table{
+    @apply pb-6 md:pb-0 ;
+}
+
+main .product-table .product-table__header{
+    @apply w-full flex pb-6 border-b-1 border-b-[var(--neutral-4)] justify-between font-semibold lg:w-[643px] ;
+    font-family: var(--font-inter)
+}
+main .product-table .product-table__header .col__sg {
+    @apply w-[322px] flex flex-row justify-between ;
+    >* {
+        @apply hidden md:block
+    }
+}
+/*--product table body*/
+
+
+
+
+
+
+
+form.product-cart__summary {
+    @apply  min-w-[312px] h-[fit-content] p-4 flex flex-col flex-none gap-4 border-1 border-[var(--neutral-4)] rounded-[6px] lg:w-[312px]  lg:p-6 xl:w-[413px];
+}
+form.product-cart__summary h2 {
+    @apply text-[20px];
+}
+form.product-cart__summary .summary-delivery{
+    @apply flex flex-col gap-3 pb-4;
+}
+.summary-delivery__choice {
+    @apply flex flex-row justify-between items-center px-4 py-[13px] border-1 border-[var(--neutral-7)]/90 rounded-[4px];
+    font-family: var(--font-inter);
+}
+.summary-deliver__choice:focus-within {
+    @apply bg-[var(--neutral-2)]
+}
+.summary-delivery__choice .inpt-radio__group {
+    @apply flex flex-row gap-3 items-center;
+    >input[type="radio"] {
+        @apply relative appearance-none outline-none w-[18px] h-[18px] p-1 grid place-content-center aspect-[1] cursor-pointer border-1 border-[black]/900 rounded-full bg-[transparent]   
+    }
+    >input[type="radio"]::after {
+        @apply content-[""] w-full h-full scale-0 opacity-0 absolute rounded-[inherit] bg-[black];
+        transition: opacity 150ms ease-in-out;
+        transition: scale 150ms ease-in-out;
+    }
+    >input[type="radio"]:hover::after {
+        @apply opacity-[.5] scale-[.75];
+    }
+    >input[type="radio"]:checked:after {
+        @apply opacity-[1] scale-[.75]
+    }
+}
+.summary-delivery__choice .inpt-radio__group:focus-within {
+    @apply font-semibold;
+}
+form.product-cart__summary.fields{
+    @apply pb-4;
+}
+form.product-cart__summary .fields .fields__subtotal, form.product-cart__summary .fields .fields__total {
+    @apply py-[13px] flex flex-row justify-between flex-1 items-center;
+    font-family: var(--font-inter);
+    >p:nth-child(2) {
+        @apply font-semibold
+    }
+}
+form.product-cart__summary button {
+    @apply py-[10px] px-[26px] rounded-[8px] bg-[var(--neutral-7)] text-white text-[18px];
+    font-family: var(--font-inter);
+}
+
+
+
+
+
+
+
+/**-------------checkout form styling**/
+
+form[name="order_checkout-info"] {
+    @apply flex flex-col gap-6 w-[312px] lg:w-[643px];
+    font-family: var(--font-inter)
+}
+
+form[name="order_checkout-info"] fieldset {
+    @apply px-4 py-6 border-1 rounded-[4px] w-full flex flex-col gap-6 
+}
+
+form[name="order_checkout-info"] fieldset h2 {
+    @apply font-semibold text-[var(--neutral-7)]
+}
+
+form[name="order_checkout-info"] fieldset .__double {
+    @apply flex flex-row flex-none justify-between w-[280px] lg:w-full ;
+}
+.__double .input-group {
+    @apply w-[136px]  lg:w-[285.5px]
+}
+
+.input-group {
+    @apply font-[700] text-[var(--neutral-4)] flex flex-col gap-3 text-[12px];
+    >input {
+        @apply  h-[40px] px-4 border-1 border-[var(--neutral-4)] rounded-[6px] font-[400];
+    }
+    & .css-13cymwt-control {
+        @apply h-[40px] rounded-[6px] border-[var(--neutral-4)] text-[12px] font-[400] text-[var(--neutral-4)];
+
+    }
+    & .css-t3ipsp-control {
+        @apply rounded-[6px] border-[black] shadow-[unset] h-[40px] text-[12px] text-[var(--neutral-4)] font-[400];
+    }
+    & .css-t3ipsp-control:hover {
+        @apply rounded-[6px] border-[black] 
+    }
+}
+
+/*______complete order_____*/
+/*
+main .complete {
+    @apply min-w-[312px]  flex flex-col p-4 rounded-[4px] gap-[40px] grow lg:px-[95px] lg:py-[80px] lg:items-center;
+    box-shadow:0 32px 48px rgba(18,18,18,.1);
+    animation: pop .150s ease-out forwards;
+}
+
+main .complete .complete__header {
+    @apply flex flex-col gap-4 w-[280px] text-[var(--neutral-4)] text-[16px] lg:w-[546px] lg:text-[28px] lg:text-center lg:items-center;
+    font-family: var(--font-inter);
+    >h2 {
+        @apply w-[70%] text-[#23262F] lg:text-center lg:text-[40px];
+        font-size: var(--fs-h5);
+        letter-spacing: -0.6px;
+        line-height: 38px;
+        font-family: var(--font-poppins);
+    }
+}
+main .complete .complete__product-img{
+    @apply flex flex-row w-[280px] overflow-x-auto items-start lg:w-[546px] gap-[20px] lg:gap-[40px] justify-start;
+    
+    
+}
+.complete__product-img .img__container {
+    @apply relative lg:flex lg:items-end w-[88px] h-[104px] lg:w-[96px] lg:h-[112px] flex-shrink-0;
+    >.qt {
+        @apply absolute left-[72px] w-[16px] h-[16px] bg-[var(--neutral-7)] text-[white] text-center flex items-end justify-center text-[10px] top-0 rounded-full lg:w-[32px] lg:h-[32px] lg:text-[16px] lg:items-center lg:left-[64px];
+    }
+}
+
+main .complete .complete__info {
+    @apply flex flex-col gap-4 lg:gap-5 lg:w-[546px] 
+}
+
+main .complete .complete__info .info__row{
+    @apply flex flex-col  pb-4 text-[14px] text-[var(--neutral-4)] font-semibold border-b-2 border-b-[var(--neutral-3)] lg:flex-row lg:gap-8 lg:justify-center lg:border-b-0 lg:pb-[unset];
+    font-family: var(--font-inter);
+    >.label {
+        @apply lg:w-[148px]
+    }
+    >.info {
+        @apply text-[var(--neutral-7)] lg:w-[148px];
+    }
+}
+
+main .complete a {
+    @apply py-3 px-[40px] w-[280px] rounded-full bg-[var(--neutral-7)] text-[white] text-center;
+    font-family: var(--font-inter);
+}
+*/

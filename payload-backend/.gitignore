@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+build
+dist
+.tmp
+.env
+*.log
+payload-types.ts
+public/uploads/*
+!public/uploads/.gitkeep

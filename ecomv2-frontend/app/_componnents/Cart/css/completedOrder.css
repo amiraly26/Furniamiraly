@@ -1,0 +1,57 @@
+@reference "../../../globals.css";
+
+main .complete {
+    @apply min-w-[312px]  flex flex-col p-4 rounded-[4px] gap-[40px] grow lg:px-[95px] lg:py-[80px] lg:items-center;
+    box-shadow:0 32px 48px rgba(18,18,18,.1);
+    animation: pop .150s ease-out forwards;
+}
+
+main .complete .complete__header {
+    @apply flex flex-col gap-4 w-[280px] text-[var(--neutral-4)] text-[16px] lg:w-[546px] lg:text-[28px] lg:text-center lg:items-center;
+    font-family: var(--font-inter);
+    >h2 {
+        @apply w-[70%] text-[#23262F] lg:text-center lg:text-[40px];
+        font-size: var(--fs-h5);
+        letter-spacing: -0.6px;
+        line-height: 38px;
+        font-family: var(--font-poppins);
+    }
+}
+main .complete .complete__product-img{
+    @apply flex flex-row w-[280px] overflow-x-auto items-start lg:w-[546px] gap-[8px] lg:gap-[40px];
+    
+}
+main .complete .complete__product-img::-webkit-scrollbar {
+    @apply h-[4px] bg-white rounded-md;
+}
+
+main .complete .complete__product-img::-webkit-scrollbar-thumb {
+    @apply bg-[var(--neutral-7)] rounded-md;
+}
+
+.complete__product-img .img__container {
+    @apply relative lg:flex lg:items-end w-[88px] h-[104px] lg:w-[96px] lg:h-[112px] flex-shrink-0;
+    >.qt {
+        @apply absolute left-[72px] w-[16px] h-[16px] bg-[var(--neutral-7)] text-[white] text-center flex items-end justify-center text-[10px] top-0 rounded-full lg:w-[32px] lg:h-[32px] lg:text-[16px] lg:items-center lg:left-[64px];
+    }
+}
+
+main .complete .complete__info {
+    @apply flex flex-col gap-4 lg:gap-5 lg:w-[546px] 
+}
+
+main .complete .complete__info .info__row{
+    @apply flex flex-col  pb-4 text-[14px] text-[var(--neutral-4)] font-semibold border-b-2 border-b-[var(--neutral-3)] lg:flex-row lg:gap-8 lg:justify-center lg:border-b-0 lg:pb-[unset];
+    font-family: var(--font-inter);
+    >.label {
+        @apply lg:w-[148px]
+    }
+    >.info {
+        @apply text-[var(--neutral-7)] lg:w-[148px];
+    }
+}
+
+main .complete a {
+    @apply py-3 px-[40px] w-[280px] rounded-full bg-[var(--neutral-7)] text-[white] text-center;
+    font-family: var(--font-inter);
+}

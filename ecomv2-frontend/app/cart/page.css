@@ -1,0 +1,51 @@
+@reference "../globals.css";
+
+#page-header {
+    @apply flex flex-col overflow-hidden pt-4 pb-10 gap-10 lg:p-0
+}
+
+#page-header .breadcrumbs {
+    @apply pl-8 flex flex-row text-[12px] text-[var(--primary)]/60 lg:hidden;
+    font-family: var(--font-inter);
+    >span {
+        @apply text-[12px] flex flex-row items-center justify-center;
+    } 
+}
+
+#page-header header {
+    @apply flex flex-col gap-6 px-8 ;
+}
+#page-header header h2 {
+    @apply text-[44px] text-center;
+}
+
+main {
+    @apply max-w-[1200px]  flex flex-col flex-none px-8 md:items-center lg:items-stretch lg:pt-[80px] lg:flex-row md:gap-[64px] relative transition-[all] duration-100 ease-in-out;
+}
+
+
+.load-wraper{
+  @apply relative h-[495px] bg-[rgb(211,211,211)] z-[44] overflow-hidden rounded-[20px];
+  width: min(80vw, 1200px);
+  
+}
+.activity{
+  @apply absolute h-[100%] w-[45%] left-[-45%] z-[45];
+  background-image: linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05));
+  background-image: -moz-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05));
+  background-image: -webkit-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05));
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0%{
+    left: -45%;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+.go-left {
+  @apply translate-x-[100];
+}

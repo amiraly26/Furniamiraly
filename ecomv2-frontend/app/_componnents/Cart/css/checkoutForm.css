@@ -1,0 +1,133 @@
+@reference "../../../globals.css";
+
+form.product-cart__summary {
+    @apply  min-w-[312px] h-[fit-content] p-4 flex flex-col flex-none gap-4 border-1 border-[var(--neutral-4)] rounded-[6px] lg:w-[312px]  lg:p-6 xl:w-[413px];
+}
+form.product-cart__summary h2 {
+    @apply text-[20px];
+}
+form.product-cart__summary .summary-delivery{
+    @apply flex flex-col gap-3 pb-4;
+}
+.summary-delivery__choice {
+    @apply flex flex-row justify-between items-center px-4 py-[13px] border-1 border-[var(--neutral-7)]/90 rounded-[4px];
+    font-family: var(--font-inter);
+}
+.summary-deliver__choice:focus-within {
+    @apply bg-[var(--neutral-2)]
+}
+.summary-delivery__choice .inpt-radio__group {
+    @apply flex flex-row gap-3 items-center;
+    >input[type="radio"] {
+        @apply relative appearance-none outline-none w-[18px] h-[18px] p-1 grid place-content-center aspect-[1] cursor-pointer border-1 border-[black]/900 rounded-full bg-[transparent]   
+    }
+    >input[type="radio"]::after {
+        @apply content-[""] w-full h-full scale-0 opacity-0 absolute rounded-[inherit] bg-[black];
+        transition: opacity 150ms ease-in-out;
+        transition: scale 150ms ease-in-out;
+    }
+    >input[type="radio"]:hover::after {
+        @apply opacity-[.5] scale-[.75];
+    }
+    >input[type="radio"]:checked:after {
+        @apply opacity-[1] scale-[.75]
+    }
+}
+.summary-delivery__choice .inpt-radio__group:focus-within {
+    @apply font-semibold;
+}
+form.product-cart__summary.fields{
+    @apply pb-4;
+}
+form.product-cart__summary .fields .fields__subtotal, form.product-cart__summary .fields .fields__total {
+    @apply py-[13px] flex flex-row justify-between flex-1 items-center;
+    font-family: var(--font-inter);
+    >p:nth-child(2) {
+        @apply font-semibold
+    }
+}
+form.product-cart__summary button {
+    @apply py-[10px] px-[26px] rounded-[8px] bg-[var(--neutral-7)] text-white text-[18px];
+    font-family: var(--font-inter);
+}
+
+/**checkout form styling**/
+
+form[name="order_checkout-info"] {
+    @apply flex flex-col gap-6 w-[312px] md:w-[643px];
+    font-family: var(--font-inter)
+}
+
+form[name="order_checkout-info"] fieldset {
+    @apply px-4 py-6 border-1 rounded-[4px] w-full flex flex-col gap-6 
+}
+
+form[name="order_checkout-info"] fieldset h2 {
+    @apply font-semibold text-[var(--neutral-7)]
+}
+
+form[name="order_checkout-info"] fieldset .__double {
+    @apply flex flex-row flex-none justify-between w-[280px] md:w-full ;
+}
+.__double .input-group {
+    @apply w-[136px]  md:w-[285.5px]
+}
+
+.input-group {
+    @apply font-[700] text-[var(--neutral-4)] flex flex-col gap-3 text-[12px];
+    >input {
+        @apply  h-[40px] px-4 border-1 border-[var(--neutral-4)] rounded-[6px] font-[400] relative transition-[all] duration-300 ease-in-out;
+    }
+    & .css-13cymwt-control {
+        @apply h-[40px] rounded-[6px] border-[var(--neutral-4)] text-[12px] font-[400] text-[var(--neutral-4)];
+
+    }
+    & .css-t3ipsp-control {
+        @apply rounded-[6px] border-[black] shadow-[unset] h-[40px] text-[12px] text-[var(--neutral-4)] font-[400];
+    }
+    & .css-t3ipsp-control:hover {
+        @apply rounded-[6px] border-[black] cursor-pointer;
+    }
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+.submit-btn-loader {
+  width: 24px;
+  padding: 6px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--background);
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+
+@keyframes shake {
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform : translateX(5px);
+    }
+}
+
+.shake {
+    animation: shake .35s ease-in-out infinite;
+    color: red;
+}
+
+.shake-radio {
+    animation: shake .35s ease-in-out infinite;
+}

@@ -1,0 +1,41 @@
+@reference "../../../globals.css";
+
+
+
+.process-steps {
+    @apply flex flex-row gap-8 md:justify-center;
+}
+
+ .process-steps .process {
+    @apply max-sm:w-[256px] lg:w-[256px] flex-none flex flex-row gap-6 pb-[26px] relative;
+    font-family: var(--font-inter);
+
+}
+.process-steps .process.complete{
+    @apply text-[var(--secondary-green)]
+}
+
+.process-steps .process::after {
+    @apply content-[""] w-[0px] absolute bottom-[0] bg-[#23262f] h-[2px] transition-[width] duration-300 ease-in-out;
+}
+.process-steps .process.first::after, .process-steps .process.current::after {
+    @apply w-full;
+}
+.process-steps .process.complete::after {
+    @apply bg-[var(--secondary-green)]
+}
+
+
+ .process-steps .process.incomplete {
+    @apply border-b-0 opacity-[.5];
+}
+ .process-steps .process .process__name {
+    @apply flex items-center font-semibold ;
+}
+ .process-steps .process .process__no {
+    @apply w-[42px] h-[42px] px-[17px] py-2 flex items-center bg-[#23262F] text-white rounded-full justify-center;
+}
+
+.process-steps .process.complete .process__no {
+    @apply bg-[var(--secondary-green)]
+}

@@ -1,0 +1,232 @@
+@reference "../../globals.css";
+
+.test {
+    background-color: #F3F5F7;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 40px;
+    font-family: 'Inter';
+}
+
+header:not(.cart-header) {
+    top:0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+header .scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: white; /* stays white but can be changed if wanted */
+  }
+
+  .navbar {
+    position: sticky; /* or fixed */
+    top: 0;
+    width: 100%;
+    height: 64px;
+  
+    background: white;
+    z-index: 1000;
+  
+    transition: box-shadow 0.25s ease;
+  }
+  
+  /* Shadow appears on scroll */
+  .navbar--scrolled {
+    box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.5);
+  }
+  
+
+#shopnow {
+    color: rgb(21, 110, 170);
+    text-decoration: underline;
+}
+
+a#shopnow:hover, a#shopnow:active {
+    color: rgb(115, 199, 255);;
+}
+
+i {
+    color: rgb(21, 110, 170);
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0% 12% 0%;
+    font-family: var(--font-grotesk);
+}
+
+.logo {
+    font-size: 25px;
+    font-family: var(--font-poppins);
+    filter: blur(15px);
+    overflow: hidden;
+}
+
+#icon_container {
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: 10px;
+}
+
+#icon {
+    font-size: 30px;
+}
+
+#links_container {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    gap: 43px;
+    color: rgb(123, 123, 123);
+}
+
+#links_container a:hover, #links_container a:active {
+    color: black;
+}
+
+#menu_icon {
+    display: none;
+}
+.cart-icon {
+    @apply hover:cursor-pointer relative;
+}
+
+/* Dark overlay behind the menu */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+  
+    width: 100vw;
+    height: 100vh;
+  
+    background: rgba(0, 0, 0, 0.25); /* dark transparent */
+    z-index: -1; /* below menu, above content */
+  }
+  
+
+@media screen and (max-width: 768px) {
+    .icon2 {
+        display: none;
+    }
+
+    #links_container {
+        display: none;
+    }
+
+    #menu_icon {
+        display: block;
+        color: black;
+        font-size: 16px;
+    }
+}
+
+.item-icon {
+    @apply absolute bg-[red] w-[10px] h-[10px] rounded-full top-0 right-0;
+
+    #icon_container {
+        gap: 10px;
+    }
+}
+
+/* Burger icon */
+.burger {
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: black;
+  }
+  
+  .burger span {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  #icon_space {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Burger animation */
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  
+/* Menu container */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 225px;
+    height: 100vh;
+  
+    background: #FFFFFF;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+    align-items: start;
+  
+    /* 🔒 Prevent vertical movement */
+    overflow-y: auto;
+  
+    /* ⬅️ ONLY horizontal animation */
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.35s ease;
+    will-change: transform;
+  }
+  
+  .menu.show {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  
+  /* Menu links */
+  .menu a {
+    padding: 10px 8px;
+    color: black;
+    text-decoration: none;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  
+  .menu a:hover, .menu a:active {
+    color: #2F7694;
+  }
+
+hr:not(.divider):not(.comment-divider){
+    width: 100%;
+    padding-bottom: 24px;
+}

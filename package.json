@@ -1,0 +1,19 @@
+{
+  "name": "ecomv2",
+  "version": "1.0.0",
+  "description": "E Commerce using Next Js & Payload CMS connected to Zoho Inventory by n8n",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --names \"payload,frontend\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix payload-backend\" \"npm run dev --prefix ecomv2-frontend\"",
+    "dev:backend": "npm run dev --prefix payload-backend",
+    "dev:frontend": "npm run dev --prefix ecomv2-frontend",
+    "build": "concurrently \"npm run build --prefix payload-backend\" \"npm run build --prefix ecomv2-frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.3"
+  }
+}

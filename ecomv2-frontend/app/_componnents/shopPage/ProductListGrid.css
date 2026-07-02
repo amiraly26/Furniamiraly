@@ -1,0 +1,81 @@
+@reference "../../globals.css";
+
+.shop-products {
+    @apply mx-auto mb-16 grid max-w-[1120px] grid-cols-1 gap-8 px-8 md:grid-cols-[180px_1fr] lg:px-0;
+}
+
+.shop-products__sidebar {
+    @apply hidden md:block;
+}
+
+.shop-filter-title {
+    @apply mb-8 flex items-center gap-2 text-[#141718];
+}
+
+.shop-filter-title h4 {
+    @apply m-0 p-0 text-[18px] font-semibold leading-7;
+}
+
+.shop-filter-heading {
+    @apply mb-4 text-[13px] font-semibold leading-5 text-[#141718];
+    letter-spacing: 0.3px;
+}
+
+.shop-mobile-filter-bar {
+    @apply flex border-y border-[#E8ECEF] py-3 md:hidden;
+}
+
+.shop-mobile-filter-trigger {
+    @apply flex cursor-pointer items-center gap-2 text-[#141718];
+}
+
+.shop-mobile-filter-trigger h4 {
+    @apply m-0 p-0 text-[18px] font-semibold;
+}
+
+.shop-products__main {
+    @apply min-w-0;
+}
+
+.shop-products__toolbar {
+    @apply mb-8 flex items-center justify-between gap-4;
+}
+
+.shop-products__toolbar h2 {
+    @apply text-[20px] font-semibold leading-8 text-[#141718] md:text-[22px];
+}
+
+.shop-products__actions {
+    @apply flex items-center gap-6;
+}
+
+.shop-view-toggle {
+    @apply hidden items-center gap-2 text-[#6C7275] md:flex;
+}
+
+.shop-view-toggle button {
+    @apply grid h-8 w-8 place-items-center rounded-[4px] border border-transparent transition-colors hover:border-[#E8ECEF] hover:text-[#141718];
+}
+
+.products_grid{
+    @apply grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.shop-show-more {
+    @apply mx-auto mt-10 block rounded-full border border-[#141718] px-10 py-2 text-[15px] font-medium text-[#141718] transition-colors hover:bg-[#141718] hover:text-white;
+    font-family: var(--font-inter);
+}
+
+@media (max-width: 767px) {
+    .shop-products {
+        @apply gap-5;
+    }
+
+    .shop-products__toolbar {
+        @apply mb-5;
+    }
+
+    .products_grid{
+        @apply grid-cols-2 gap-x-4 gap-y-8;
+    }
+}

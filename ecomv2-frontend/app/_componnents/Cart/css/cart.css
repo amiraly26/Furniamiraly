@@ -1,0 +1,18 @@
+@reference "../../../globals.css";
+
+
+/*--------cart globals--------*/
+.cart::-webkit-scrollbar {
+    display: none;
+}
+.cart {
+    @apply fixed w-screen bg-[transparent] top-0 bottom-0 z-10 overflow-auto;
+}
+.cart::before {
+    @apply block content-[""] w-full h-full opacity-[0.25] bg-black;
+}
+.cart .cart-content {
+    @apply absolute top-0 bottom-0 right-0 transition-all duration-300 overflow-auto  justify-between z-10;
+    
+}
+

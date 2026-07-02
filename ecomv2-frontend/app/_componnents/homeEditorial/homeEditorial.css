@@ -1,0 +1,125 @@
+@reference "../../globals.css";
+
+.home-sale {
+  @apply grid grid-cols-1 bg-[#f3f5f7] md:grid-cols-2;
+}
+
+.home-sale__image {
+  @apply min-h-[280px] bg-cover bg-center md:min-h-[360px] lg:min-h-[420px];
+  background-image: url("/images/background.jpeg");
+}
+
+.home-sale__content {
+  @apply flex flex-col justify-center px-8 py-12 md:px-14 lg:px-[72px];
+}
+
+.home-sale__eyebrow {
+  @apply mb-3 text-[13px] font-bold leading-4 text-[#377DFF];
+  letter-spacing: 0.4px;
+}
+
+.home-sale h2,
+.home-articles h2,
+.home-newsletter h2 {
+  @apply text-[32px] font-medium leading-[38px] text-[#141718] md:text-[40px] md:leading-[44px];
+}
+
+.home-sale__copy {
+  @apply mt-4 max-w-[460px] text-[16px] leading-7 text-[#343839];
+}
+
+.home-sale a,
+.home-section-head a,
+.home-article a {
+  @apply mt-5 flex w-fit items-center gap-1 border-b border-[#141718] text-[15px] font-medium leading-6 text-[#141718];
+  font-family: var(--font-inter);
+}
+
+.home-sale .material-symbols-outlined,
+.home-section-head .material-symbols-outlined,
+.home-article .material-symbols-outlined {
+  @apply text-[18px];
+}
+
+.home-articles {
+  @apply px-8 py-10 md:py-12 lg:px-[128px];
+}
+
+.home-section-head {
+  @apply mb-8 flex items-end justify-between gap-5;
+}
+
+.home-section-head a {
+  @apply m-0 hidden md:flex;
+}
+
+.home-articles__grid {
+  @apply grid grid-cols-1 gap-6 md:grid-cols-3;
+}
+
+.home-article__image {
+  @apply relative aspect-[1.32] overflow-hidden rounded-[8px] bg-[#f3f5f7];
+}
+
+.home-article__image img {
+  @apply object-cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home-article h3 {
+  @apply mt-5 p-0 text-[17px] font-medium leading-6 text-[#232627] md:text-[20px] md:leading-7;
+}
+
+.home-article a {
+  @apply mt-2;
+}
+
+.home-newsletter {
+  @apply grid min-h-[280px] grid-cols-1 overflow-hidden bg-[#f3f5f7] md:grid-cols-[1fr_1.2fr_1fr];
+}
+
+.home-newsletter__visual {
+  @apply hidden bg-contain bg-bottom bg-no-repeat md:block;
+}
+
+.home-newsletter__visual--left {
+  background-image: url("/images/bedroom.png");
+  background-position: left bottom;
+}
+
+.home-newsletter__visual--right {
+  background-image: url("/images/ligh beige pillow.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-newsletter__content {
+  @apply flex flex-col items-center justify-center px-8 py-14 text-center;
+}
+
+.home-newsletter__content p {
+  @apply mt-2 text-[16px] leading-7 text-[#343839];
+}
+
+.home-newsletter form {
+  @apply mt-8 flex w-full max-w-[500px] items-center gap-3 border-b border-[#6C7275] pb-3 text-left;
+}
+
+.home-newsletter input {
+  @apply min-w-0 flex-1 bg-transparent text-[15px] leading-6 outline-none;
+  font-family: var(--font-inter);
+}
+
+.home-newsletter button {
+  @apply text-[15px] font-medium text-[#6C7275] transition-colors hover:text-[#141718];
+  font-family: var(--font-inter);
+}
+
+@media (max-width: 767px) {
+  .home-sale h2,
+  .home-articles h2,
+  .home-newsletter h2 {
+    @apply text-[28px] leading-[34px];
+  }
+}

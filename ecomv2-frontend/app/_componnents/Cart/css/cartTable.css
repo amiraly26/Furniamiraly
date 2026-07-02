@@ -1,0 +1,50 @@
+@reference "../../../globals.css";
+
+.product-table{
+    @apply pb-6 md:pb-0  sm:w-[auto];
+}
+
+.product-table__body{
+    @apply overflow-y-scroll;
+    max-height: calc(495px - 49px);
+}
+
+.product-table__body::-webkit-scrollbar {
+    @apply ml-[20px] w-4  
+}
+.product-table__body::-webkit-scrollbar-track {
+    @apply ml-[20px] w-2 bg-[transparent] 
+}
+.product-table__body::-webkit-scrollbar-thumb {
+    @apply ml-[20px] w-2 bg-[var(--neutral-4)] ;
+    border: 6px solid transparent;
+    border-radius: 88px;
+    background-clip: content-box;
+}
+
+.product-table .product-table__header{
+    @apply w-full flex pb-6 border-b-1 border-b-[var(--neutral-4)] justify-between font-semibold lg:w-[643px] ;
+    font-family: var(--font-inter)
+}
+.product-table .product-table__header .col__sg {
+    @apply w-[252px] md:w-[322px] md:w-[523px]  lg:w-[322px] flex flex-row justify-between ;
+    >* {
+        @apply hidden lg:block
+    }
+}
+
+.empty-cart {
+    @apply h-[495px] rounded-[20px] flex flex-col items-center justify-start;
+    >.material-symbols-outlined {
+        @apply text-[128px]
+    }
+    >h3 {
+        @apply text-[28px] text-center font-[500]
+    }
+    > a {
+        @apply flex flex-row gap-1 md:gap-2 items-center text-[var(--secondary-blue)] border-b-1 text-[28px];
+        >p, >span{
+            @apply text-[22px]
+        }
+    }
+}

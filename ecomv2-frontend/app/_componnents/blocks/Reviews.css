@@ -1,0 +1,119 @@
+@reference "../../globals.css";
+
+.reviews-section{
+     @apply mx-auto max-w-[1120px] px-6 py-12 md:px-8 lg:px-0;
+}
+
+.divider,
+.comment-divider {
+  @apply w-full h-px bg-[#ddd] border-0;
+}
+
+.upper-reviews h2 {
+  @apply my-5 text-[28px] font-medium leading-9 text-[#141718];
+}
+
+.prod-name {
+  @apply text-[16px] font-semibold text-[#6C7275];
+}
+
+.reviews-section .reviews {
+  @apply text-[12px] mb-[10px] flex gap-[10px];
+}
+
+.reviews-form {
+  @apply py-[25px];
+}
+
+.filter-reviews {
+  @apply flex items-center justify-between gap-6;
+}
+
+.total-reviews {
+  @apply text-[28px] font-medium;
+}
+
+.dropdown {
+  @apply text-[16px] font-semibold;
+}
+
+.dropdown select {
+  @apply text-[16px] font-semibold w-[256px] h-[48px]
+         px-4 py-2 border-2 border-[#E8ECEF] rounded-lg
+         bg-white cursor-pointer;
+}
+
+.comment-up {
+  @apply flex gap-[40px];
+}
+
+.comment-card {
+  @apply my-6;
+}
+
+.comment-info {
+  @apply flex flex-col;
+}
+
+.comment-info .reviewer-name {
+  @apply mb-[10px] text-[20px] font-semibold;
+}
+
+.profile-pic img {
+  @apply w-[72px] h-[72px] rounded-full;
+}
+
+.comment-down {
+  @apply pl-[115px];
+}
+
+.comment {
+  @apply text-justify text-[16px] font-normal text-[#353945] leading-[26px];
+}
+
+.load-btn {
+  @apply w-[158px] h-[40px] border border-[#141718] rounded-full
+         text-[16px] font-medium bg-white text-[#141718]
+         cursor-pointer transition-all duration-200 block mx-auto my-[24px];
+}
+
+.load-btn:hover {
+  @apply bg-[#141718] text-white;
+}
+
+.reviews-section i{
+  color:black;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  .filter-reviews{
+    display:block;
+    gap:10px;
+  }
+
+  .dropdown select{
+    margin:20px 0px ;
+    width:100%;
+  }
+
+  .comment-down{
+    padding-left:0px;
+    margin-top:15px;
+    }
+
+    .input-wrapper button{
+        width:32px;
+        height:32px;
+        border-radius:100px;
+        padding:4px;
+    }
+}
+
+/*Phones*/
+@media (max-width: 420px) {
+  .reviews-section {
+    @apply px-5 py-8;
+  }
+}
+

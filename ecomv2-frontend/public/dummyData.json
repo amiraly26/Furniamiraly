@@ -1,0 +1,524 @@
+[
+  {
+    "id": 16,
+    "documentId": "t6gr10hnre14ltmqfrano8pe",
+    "name": "Pearl Dome Table Lamp",
+    "slug": "pearl-dome-table-lamp",
+    "shortDescription": "Rounded accent lamp with a soft pearl finish",
+    "description": "A rounded pearl-tone table lamp that brings soft ambient light to shelves, bedside tables, and console corners. Its calm shape works well with modern decor and cozy rooms.",
+    "price": 19,
+    "images": {
+      "url": "/images/products/table lamp.jpg",
+      "alternativeText": "Pearl Dome Table Lamp"
+    },
+    "sku": null,
+    "stock": 50,
+    "featured": false,
+    "rating": 3.5,
+    "createdAt": "2025-12-08T10:29:31.775Z",
+    "updatedAt": "2025-12-08T10:31:48.137Z",
+    "publishedAt": "2025-12-08T10:31:48.268Z",
+    "product_category": [
+      {
+        "name": "Decor",
+        "slug": "decor"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "documentId": "rz4qxqssnlqngz5p5cb36tne",
+    "name": "Tripod Table Lamp",
+    "slug": "tripod-table-lamp",
+    "shortDescription": "Tall tripod lamp with warm wood detail",
+    "description": "A tall tripod lamp with a clean shade and warm wooden legs. It adds useful task lighting to offices, study desks, and reading corners without feeling heavy.",
+    "price": 19,
+    "images": {
+      "url": "/images/products/table lamp (2).jpg",
+      "alternativeText": "Tripod Table Lamp"
+    },
+    "sku": null,
+    "stock": 50,
+    "featured": true,
+    "rating": 3.5,
+    "createdAt": "2025-12-08T10:35:45.863Z",
+    "updatedAt": "2025-12-08T10:35:45.863Z",
+    "publishedAt": "2025-12-08T10:35:45.967Z",
+    "product_category": [
+      {
+        "name": "Office",
+        "slug": "office"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "documentId": "rjqa5hvcds7yq8ohq2laqf3m",
+    "name": "Black Bow Side Table",
+    "slug": "black-bow-side-table",
+    "shortDescription": "Black Bow Side Table",
+    "description": "Add a touch of playful elegance and modern artistry to your home with our Sculptural Black Bow Side Table. This eye-catching piece features a striking design where the base is shaped like a delicate, stylized bow or ribbon, crafted from smooth, high-gloss black metal or durable molded resin. The dark finish provides a sophisticated contrast to the light it reflects, turning the table into a functional piece of sculpture. The circular top offers a practical surface for holding drinks, books, or a small lamp. Perfect for placing beside a sofa or armchair, this side table instantly elevates the chic factor of any contemporary living space.",
+    "price": 16.99,
+    "images": {
+      "url": "/images/products/black brow side table.jpg",
+      "alternativeText": "Black Bow Side Table"
+    },
+    "sku": null,
+    "stock": 50,
+    "featured": true,
+    "rating": 2.5,
+    "createdAt": "2025-12-08T10:37:08.252Z",
+    "updatedAt": "2025-12-08T10:37:08.252Z",
+    "publishedAt": "2025-12-08T10:37:08.410Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "documentId": "f077sfjm175jn9ypzq2jnuyr",
+    "name": "Bamboo Storage Basket",
+    "slug": "bamboo-storage-basket",
+    "shortDescription": "Handwoven basket for natural storage",
+    "description": "Embrace natural organization with our Handwoven Bamboo Storage Basket. Crafted from sustainably sourced bamboo, this basket features a tightly woven construction that offers both durability and natural beauty. The light, neutral tones and distinct texture of the bamboo introduce an organic, calming element to any room. Equipped with sturdy, integrated handles for easy transport, this versatile basket is perfect for a wide range of uses—from holding laundry and storing blankets in the living room to organizing toys or magazines. Its timeless design ensures it complements rustic, bohemian, and modern minimalist decor styles alike.",
+    "price": 9.99,
+    "images": {
+      "url": "/images/products/bamboo basket.jpg",
+      "alternativeText": "Bamboo Storage Basket"
+    },
+    "sku": null,
+    "stock": 50,
+    "featured": true,
+    "rating": 2.5,
+    "createdAt": "2025-12-08T10:39:05.451Z",
+    "updatedAt": "2025-12-08T10:39:05.451Z",
+    "publishedAt": "2025-12-08T10:39:05.525Z",
+    "product_category": [
+      {
+        "name": "Decor",
+        "slug": "decor"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "documentId": "bu0gt6uus2fybm4liu6pi0iq",
+    "name": "Red Tray Side Table",
+    "slug": "red-tray-side-table",
+    "shortDescription": "Bright red tray table for work corners",
+    "description": "A slim red tray table that adds a clean pop of colour beside a desk, reading chair, or sofa. The raised edge keeps drinks, books, and small decor pieces neatly in place.",
+    "price": 4999,
+    "sku": null,
+    "images": {
+      "url": "/images/products/TABLE-RED.jpg",
+      "alternativeText": "Red tray side table"
+    },
+    "stock": 50,
+    "featured": false,
+    "rating": 3.5,
+    "createdAt": "2025-12-08T10:21:52.700Z",
+    "updatedAt": "2025-12-08T10:22:44.974Z",
+    "publishedAt": "2025-12-08T10:22:45.121Z",
+    "product_category": [
+      {
+        "name": "Office",
+        "slug": "office"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "documentId": "m97u3a4jjkmc75qe2fj7hxnn",
+    "name": "Luxury Sofa",
+    "slug": "luxury-sofa",
+    "shortDescription": "white luxury sofa",
+    "description": "Introducing the epitome of refined comfort and stately design: our Opulent Luxury Sofa. This masterpiece of seating is crafted for the discerning homeowner, combining breathtaking aesthetics with unparalleled comfort. Upholstered in sumptuously soft, high-grade [Mention fabric, e.g., velvet, Italian leather, or bespoke chenille], the sofa features deep, hand-tufted cushions and elegantly rolled or streamlined arms, providing a look that is both timeless and grand. The structure rests on finely detailed, solid [Mention material, e.g., mahogany or polished brass] legs, adding a layer of subtle glamour. Designed to be the undisputed focal point of any high-end living space, this sofa delivers a seating experience that defines true luxury and enduring style.",
+    "price": 299,
+    "sku": null,
+    "images": {
+      "url": "/images/products/luxury sofa.jpg",
+      "alternativeText": "Luxury Sofa"
+    },
+    "stock": 50,
+    "featured": true,
+    "rating": 5,
+    "createdAt": "2025-12-08T10:27:01.877Z",
+    "updatedAt": "2025-12-08T10:31:35.204Z",
+    "publishedAt": "2025-12-08T10:31:35.286Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "documentId": "ywh0ltjziaoe0bv7k0mn95iq",
+    "name": "White Drawer Unit",
+    "slug": "white-drawer-unit",
+    "shortDescription": "White Drawer Unit",
+    "description": "Organize your space with effortless style using our Streamlined White Drawer Unit. This practical and aesthetically pleasing storage solution features a crisp, matte white finish that brightens any room while offering versatile storage for clothing, office supplies, or household clutter. Built with a sturdy frame and smooth, gliding drawers, this unit is designed for daily durability and ease of use. Its clean lines and minimalist design allow it to fit seamlessly beneath a desk or stand alone as a simple, modern chest, making it an essential piece for maximizing organization in bedrooms, offices, or craft rooms.",
+    "price": 89.99,
+    "sku": null,
+    "images": {
+      "url": "/images/products/white drawer unit.jpg",
+      "alternativeText": "White Drawer Unit"
+    },
+    "stock": 50,
+    "featured": true,
+    "rating": 4,
+    "createdAt": "2025-12-08T10:31:08.093Z",
+    "updatedAt": "2025-12-08T10:32:13.446Z",
+    "publishedAt": "2025-12-08T10:32:13.532Z",
+    "product_category": [
+      {
+        "name": "Bedroom",
+        "slug": "bedroom"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "documentId": "hjfctj57z6aqq1vn0yhhrgyh",
+    "name": "Loveseat Sofa",
+    "slug": "loveseat-sofa",
+    "shortDescription": "grey love seat sofa",
+    "description": "Meet the perfect marriage of comfort and compact style with our Grey Loveseat Sofa. Upholstered in a soft, durable fabric in a sophisticated shade of grey, this piece is designed to seamlessly blend into any contemporary or traditional decor scheme, from minimalist apartments to cozy dens. Ideal for smaller living spaces, the loveseat comfortably seats two people without sacrificing luxurious feel. Featuring plush, generously padded cushions and supportive armrests, it offers a welcoming spot for relaxing, reading, or enjoying a quiet evening. The neutral grey hue ensures versatility, easily complementing bold accent colors or",
+    "price": 199,
+    "sku": null,
+    "images": {
+      "url": "/images/products/loveseat sofa.jpg",
+      "alternativeText": "Loveseat Sofa"
+    },
+    "stock": 50,
+    "featured": true,
+    "rating": 4,
+    "createdAt": "2025-12-08T10:24:56.541Z",
+    "updatedAt": "2025-12-08T10:32:29.939Z",
+    "publishedAt": "2025-12-08T10:32:30.052Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "documentId": "kmzxo7a3y0asx6gxfhdkf38b",
+    "name": "Cozy Sofa",
+    "slug": "cozy-sofa",
+    "shortDescription": "cozy sofa",
+    "description": "Sink into pure relaxation with our Ultimate Cozy Sofa, specifically designed for unparalleled comfort. Upholstered in an incredibly soft, textured [Mention fabric, e.g., chenille, brushed microfibre, or lambswool-like] fabric, this sofa is built to be your personal haven. It features deeply-filled, overstuffed cushions and a generous, low profile that invites lounging, napping, and movie marathons. The casual, welcoming design prioritizes softness and sink-in comfort, making it the perfect centerpiece for a relaxed living room or family space where maximum comfort is key.",
+    "price": 299,
+    "sku": null,
+    "images": {
+      "url": "/images/products/cozy sofa.jpg",
+      "alternativeText": "Cozy Sofa"
+    },
+    "stock": 50,
+    "featured": true,
+    "rating": 3.5,
+    "createdAt": "2025-12-08T10:34:09.164Z",
+    "updatedAt": "2025-12-08T10:34:09.164Z",
+    "publishedAt": "2025-12-08T10:34:09.303Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "documentId": "wxkbnyau0v65guy32r7inhmk",
+    "name": "Petite Bedside Lamp",
+    "slug": "petite-bedside-lamp",
+    "shortDescription": "Small lamp for bedside tables and shelves",
+    "description": "A compact bedside lamp made for small corners, nightstands, and shelves. It gives a gentle glow without taking up too much space.",
+    "price": 39.99,
+    "sku": null,
+    "images": {
+      "url": "/images/products/table lamp (3).jpg",
+      "alternativeText": "Petite Bedside Lamp"
+    },
+    "stock": 50,
+    "featured": true,
+    "rating": 4,
+    "createdAt": "2025-12-08T10:40:21.909Z",
+    "updatedAt": "2025-12-08T10:40:21.909Z",
+    "publishedAt": "2025-12-08T10:40:22.061Z",
+    "product_category": [
+      {
+        "name": "Bedroom",
+        "slug": "bedroom"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "documentId": "n321li2g6p1w383ig3zb4p0z",
+    "name": "Ivory Accent Pillow",
+    "slug": "off-white-pillow",
+    "shortDescription": "Soft ivory cushion for sofas and beds",
+    "description": "A soft ivory accent pillow with a clean, neutral look. It layers easily with patterned cushions and brings a comfortable finish to sofas or beds.",
+    "price": 7.99,
+    "sku": null,
+    "images": {
+      "url": "/images/products/off-white pillow.jpg",
+      "alternativeText": "Ivory accent pillow"
+    },
+    "stock": 50,
+    "featured": false,
+    "rating": 4,
+    "createdAt": "2025-12-08T10:41:50.404Z",
+    "updatedAt": "2025-12-08T10:41:50.404Z",
+    "publishedAt": "2025-12-08T10:41:50.490Z",
+    "product_category": [
+      {
+        "name": "Decor",
+        "slug": "decor"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "documentId": "pecsh74mxp2bdtpqvxhz5rwa",
+    "name": "Grey Reading Armchair",
+    "slug": "grey-reading-armchair",
+    "shortDescription": "Comfortable grey armchair for reading corners",
+    "description": "A relaxed grey armchair with a deep seat and soft cushion support. It is made for quiet reading corners, living rooms, and cozy spaces that need one comfortable statement seat.",
+    "price": 16999,
+    "sku": "LIV-CHAIR-005",
+    "images": {
+      "url": "/images/products/loveseat sofa2.jpg",
+      "alternativeText": "Grey Reading Armchair"
+    },
+    "stock": 15,
+    "featured": true,
+    "rating": 4.5,
+    "createdAt": "2025-12-08T10:43:21.112Z",
+    "updatedAt": "2025-12-08T10:43:21.112Z",
+    "publishedAt": "2025-12-08T10:43:21.202Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ],
+    "ProductId": "grey-reading-armchair"
+  },
+  {
+    "id": 34,
+    "documentId": "m8887ao5o3ubz1wibtwlf4gm",
+    "name": "Light Beige Pillow",
+    "slug": "light-beige-pillow",
+    "shortDescription": "Neutral pillow for fresh bedroom styling",
+    "description": "A soft light beige pillow for fresh bedding and relaxed seating. The neutral shade layers easily with white sheets, warm throws, and modern bedroom styling.",
+    "price": 3.99,
+    "sku": null,
+    "images": {
+      "url": "/images/products/ligh beige pillow.jpg",
+      "alternativeText": "Light Beige Pillow"
+    },
+    "stock": 50,
+    "featured": true,
+    "rating": 3.5,
+    "createdAt": "2025-12-08T10:45:07.388Z",
+    "updatedAt": "2025-12-08T10:45:07.388Z",
+    "publishedAt": "2025-12-08T10:45:07.516Z",
+    "product_category": [
+      {
+        "name": "Bedroom",
+        "slug": "bedroom"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "documentId": "fallback-living-003",
+    "name": "Noir Round Side Table",
+    "slug": "noir-round-side-table",
+    "shortDescription": "Slim black side table for sofa corners",
+    "description": "A minimal black side table with a round tray top and slim legs. It works beautifully next to sofas, accent chairs, or reading corners.",
+    "price": 8999,
+    "sku": "LIV-TABLE-003",
+    "images": {
+      "url": "/images/products/TABLE1.jpg",
+      "alternativeText": "Black round side table"
+    },
+    "stock": 35,
+    "featured": false,
+    "rating": 4,
+    "createdAt": "2026-07-01T08:02:00.000Z",
+    "updatedAt": "2026-07-01T08:02:00.000Z",
+    "publishedAt": "2026-07-01T08:02:00.000Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "documentId": "fallback-bedroom-001",
+    "name": "Serene Bedroom Chair",
+    "slug": "serene-bedroom-chair",
+    "shortDescription": "Soft accent chair for bedroom corners",
+    "description": "A calm bedroom accent chair with light upholstery and generous cushioning. Ideal for a vanity corner, reading space, or quiet morning routine.",
+    "price": 18999,
+    "sku": "BED-CHAIR-001",
+    "images": {
+      "url": "/images/bedroom.png",
+      "alternativeText": "Bedroom accent chair"
+    },
+    "stock": 16,
+    "featured": true,
+    "rating": 4.5,
+    "createdAt": "2026-07-01T08:03:00.000Z",
+    "updatedAt": "2026-07-01T08:03:00.000Z",
+    "publishedAt": "2026-07-01T08:03:00.000Z",
+    "product_category": [
+      {
+        "name": "Bedroom",
+        "slug": "bedroom"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "documentId": "fallback-kitchen-001",
+    "name": "Ivory Tufted Accent Chair",
+    "slug": "ivory-tufted-accent-chair",
+    "shortDescription": "Elegant ivory accent chair with tufted back",
+    "description": "A soft ivory tufted accent chair that brightens living rooms and bedrooms. The rounded shape, padded back, and wooden legs make it comfortable for reading corners or calm lounge spaces.",
+    "price": 12999,
+    "sku": "LIV-CHAIR-004",
+    "images": {
+      "url": "/images/products/luxury sofa1.jpg",
+      "alternativeText": "Ivory Tufted Accent Chair"
+    },
+    "stock": 18,
+    "featured": true,
+    "rating": 4.5,
+    "createdAt": "2026-07-01T08:06:00.000Z",
+    "updatedAt": "2026-07-01T08:06:00.000Z",
+    "publishedAt": "2026-07-01T08:06:00.000Z",
+    "product_category": [
+      {
+        "name": "Living Room",
+        "slug": "living-room"
+      }
+    ],
+    "ProductId": "ivory-tufted-accent-chair"
+  },
+  {
+    "id": 122,
+    "documentId": "fallback-kitchen-002",
+    "name": "Retro Steel Toaster",
+    "slug": "retro-steel-toaster",
+    "shortDescription": "Polished toaster for modern kitchens",
+    "description": "A sleek toaster with a polished finish and easy controls. It is compact, reliable, and designed to sit neatly on any kitchen counter.",
+    "price": 6999,
+    "sku": "KIT-TOAST-002",
+    "images": {
+      "url": "/images/Toaster1.png",
+      "alternativeText": "Steel toaster"
+    },
+    "stock": 28,
+    "featured": true,
+    "rating": 4,
+    "createdAt": "2026-07-01T08:07:00.000Z",
+    "updatedAt": "2026-07-01T08:07:00.000Z",
+    "publishedAt": "2026-07-01T08:07:00.000Z",
+    "product_category": [
+      {
+        "name": "Kitchen",
+        "slug": "kitchen"
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "documentId": "fallback-office-001",
+    "name": "Minimal Work Desk",
+    "slug": "minimal-work-desk",
+    "shortDescription": "Clean desk for study and office spaces",
+    "description": "A minimal desk with a dark tabletop and sturdy profile. It gives you a focused work surface for laptops, notebooks, and home-office essentials.",
+    "price": 14999,
+    "sku": "OFF-DESK-001",
+    "images": {
+      "url": "/images/products/TABLE.jpg",
+      "alternativeText": "Minimal office desk"
+    },
+    "stock": 19,
+    "featured": true,
+    "rating": 4,
+    "createdAt": "2026-07-01T08:09:00.000Z",
+    "updatedAt": "2026-07-01T08:09:00.000Z",
+    "publishedAt": "2026-07-01T08:09:00.000Z",
+    "product_category": [
+      {
+        "name": "Office",
+        "slug": "office"
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "documentId": "fallback-office-003",
+    "name": "Black Round Office Table",
+    "slug": "black-round-office-table",
+    "shortDescription": "Slim round table for office corners",
+    "description": "A slim black round table that works well beside a desk or office chair. It gives you a tidy spot for coffee, notebooks, or a small plant without taking over the room.",
+    "price": 7999,
+    "sku": "OFF-DRAWER-003",
+    "images": {
+      "url": "/images/products/TABLE2.jpg",
+      "alternativeText": "Black round office table"
+    },
+    "stock": 24,
+    "featured": false,
+    "rating": 4,
+    "createdAt": "2026-07-01T08:11:00.000Z",
+    "updatedAt": "2026-07-01T08:11:00.000Z",
+    "publishedAt": "2026-07-01T08:11:00.000Z",
+    "product_category": [
+      {
+        "name": "Office",
+        "slug": "office"
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "documentId": "fallback-decor-002",
+    "name": "Ribbed Glass Accent Lamp",
+    "slug": "ribbed-glass-accent-lamp",
+    "shortDescription": "Glass and gold lamp for shelves and sideboards",
+    "description": "A ribbed glass accent lamp with a warm gold base. It adds a soft glow to sideboards, bedside tables, and display shelves while keeping the look polished.",
+    "price": 5999,
+    "sku": "DEC-LAMP-002",
+    "images": {
+      "url": "/images/products/LAMP.jpg",
+      "alternativeText": "Ribbed glass accent lamp"
+    },
+    "stock": 36,
+    "featured": true,
+    "rating": 4,
+    "createdAt": "2026-07-01T08:13:00.000Z",
+    "updatedAt": "2026-07-01T08:13:00.000Z",
+    "publishedAt": "2026-07-01T08:13:00.000Z",
+    "product_category": [
+      {
+        "name": "Decor",
+        "slug": "decor"
+      }
+    ]
+  }
+]

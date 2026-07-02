@@ -1,0 +1,71 @@
+@reference "../../../globals.css";
+
+form.product-cart__summary {
+    @apply  min-w-[312px] h-[fit-content] md:w-[583px] p-4 flex flex-col flex-none gap-4 border-1 border-[var(--neutral-4)] rounded-[6px] lg:w-[312px]  lg:p-6 xl:w-[413px];
+}
+form.product-cart__summary h2 {
+    @apply text-[20px];
+}
+form.product-cart__summary .summary-delivery{
+    @apply flex flex-col gap-3 pb-4;
+}
+.summary-delivery__choice {
+    @apply flex flex-row justify-between items-center px-4 py-[13px] border-1 border-[var(--neutral-7)]/90 rounded-[4px];
+    font-family: var(--font-inter);
+}
+.summary-deliver__choice:focus-within {
+    @apply bg-[var(--neutral-2)]
+}
+.summary-delivery__choice .inpt-radio__group {
+    @apply flex flex-row gap-3 items-center;
+    >input[type="radio"] {
+        @apply relative appearance-none outline-none w-[18px] h-[18px] p-1 grid place-content-center aspect-[1] cursor-pointer border-1 border-[black]/900 rounded-full bg-[transparent]   
+    }
+    >input[type="radio"]::after {
+        @apply content-[""] w-full h-full scale-0 opacity-0 absolute rounded-[inherit] bg-[black];
+        transition: opacity 150ms ease-in-out;
+        transition: scale 150ms ease-in-out;
+    }
+    >input[type="radio"]:hover::after {
+        @apply opacity-[.5] scale-[.75];
+    }
+    >input[type="radio"]:checked:after {
+        @apply opacity-[1] scale-[.75]
+    }
+}
+.summary-delivery__choice .inpt-radio__group:focus-within {
+    @apply font-semibold;
+}
+.fields{
+    @apply pb-4;
+}
+.fields .fields__subtotal,.fields .fields__total {
+    @apply py-[13px] flex flex-row justify-between flex-1 items-center;
+    font-family: var(--font-inter);
+    >p:nth-child(2) {
+        @apply font-semibold
+    }
+}
+form.product-cart__summary button {
+    @apply py-[10px] px-[26px] rounded-[8px] bg-[var(--neutral-7)] text-white text-[18px] hover:cursor-pointer;
+    font-family: var(--font-inter);
+}
+
+@keyframes shake {
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform : translateX(5px);
+    }
+}
+
+.shake-radio {
+    animation: shake .35s ease-in-out infinite;
+}

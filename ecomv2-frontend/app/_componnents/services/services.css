@@ -1,0 +1,97 @@
+@reference "../../globals.css";
+
+
+
+.service_section {
+    @apply mx-auto max-w-[1120px] px-8 pb-8 lg:px-0 lg:pb-12;
+    display: flex;
+    height: auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 per row */
+    width: 100%;
+    background-color: white;
+    color: black;
+    gap: 24px;
+}
+
+.card {
+    display: block;
+    background-color: #F3F5F7;
+    /*max-width: 262px;*/
+    border-radius: 8px;
+    align-content: center;
+    text-align: start;
+    padding: 36px 28px;
+
+}
+
+div.Image {
+    color: #31393B;
+}
+
+h3 {
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-poppins);
+    color: #31393B;
+}
+
+p {
+    font-size: 14px;
+    font-family: var(--font-inter);
+    font-weight: 400;
+}
+
+.desc {
+    padding-top: 10px;
+    color: #6C7275;
+}
+
+@media screen and (max-width: 768px) {
+    /*.cards-container {
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+        width: 100%;
+        background-color: white;
+        color: black;
+        gap: 24px;
+    }*/
+
+}
+
+@media (max-width: 1023px) {
+    .cards-container {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 660px) {
+
+    .cards-container {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    .card {
+        padding: 32px 16px 32px 16px;
+        max-width: 152px;
+    }
+
+    h3 {
+        font-family: var(--font-inter);
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: var(--font-inter);
+        font-size: 14px;
+        font-weight: 400;
+    }
+  }

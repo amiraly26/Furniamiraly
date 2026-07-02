@@ -1,0 +1,107 @@
+@reference "../../../globals.css";
+
+#prodscroll_headline {
+  @apply mx-auto max-w-[1120px] px-8 lg:px-0 mt-10 lg:mt-12 flex flex-row justify-between items-end;
+}
+
+#prodscroll_headline h4{
+  @apply text-[34px] leading-[38px] tracking-[-0.6px] font-[500] lg:text-[40px] lg:leading-[44px] tracking-[-0.4px];
+}
+
+#prodscroll_headline a{
+  @apply hidden md:flex md:flex-row md:gap-1 md:items-center md:border-b-1
+}
+#prodscroll_headline a p, .more-mobile a p{
+  @apply text-[#31393B] text-[16px] font-[500] leading-[28px] tracking-[-0.4px];
+}
+#prodscroll {
+  @apply py-8 lg:py-10 !overflow-hidden px-[0] transition-[padding] duration-300 ease-in-out;
+}
+
+#prodscroll .swiper {
+  all: revert;
+  display: revert;
+  box-sizing: border-box;
+  max-height: 431px;
+}
+
+#prodscroll .swiper-slide {
+  @apply block w-[180px] md:w-[202px] object-cover;
+  background-color: unset;
+  color: unset;
+}
+
+
+#prodscroll.__left {
+  @apply pl-8 md:!pl-[max(32px,calc((100vw-1120px)/2))]
+}
+
+#prodscroll.__right {
+  @apply pr-8 md:!pr-[max(32px,calc((100vw-1120px)/2))]
+}
+
+.swiper-scrollbar {
+  @apply h-1 bg-[var(--neutral-3)] !relative rounded-[80px] mx-auto md:mb-12 hover:cursor-pointer;
+  width: calc(100vw - calc(var(--spacing) * 16));
+  max-width: 1120px;
+}
+.swiper-scrollbar-drag {
+  @apply h-1 bg-[#343839] rounded-[80px];
+}
+.swiper-scrollbar.__pushed {
+  @apply !ml-[32px];
+}
+
+
+.more-mobile {
+  @apply px-8 md:!px-8 lg:!px-[128px] mt-10 mb-8 md:hidden;
+}
+.more-mobile a {
+  @apply flex flex-row gap-1 items-center border-b-1 w-[fit-content]
+}
+
+@media screen and (min-width: 425px) {
+  #prodscroll_headline , .more-mobile{
+    @apply px-14;
+  }
+  #prodscroll.__left {
+    @apply pl-14;
+  }
+  #prodscroll.__right {
+    @apply pr-14;
+  }
+
+  .swiper-scrollbar {
+    width: calc(100vw - calc(var(--spacing) * 28));
+  }
+
+  .swiper-scrollbar.__pushed {
+    @apply !ml-[56px];
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .swiper-scrollbar {
+    width: calc(100vw - calc(var(--spacing) * 16));
+  }
+
+  .swiper-scrollbar.__pushed {
+    @apply !ml-[32px];
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-scrollbar {
+    width: min(1120px, calc(100vw - calc(var(--spacing) * 64)));
+  }
+
+  .swiper-scrollbar.__pushed {
+    margin-left: max(128px, calc((100vw - 1120px) / 2)) !important;
+  }
+}
+#prodscroll .swiper-scrollbar {
+  all: unset;
+}
+#prodscroll .swiper-scrollbar-drag {
+  all: unset;
+}

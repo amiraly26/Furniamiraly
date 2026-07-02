@@ -1,0 +1,140 @@
+@reference "../../globals.css";
+
+
+
+footer {
+    @apply bg-[var(--neutral-7)] text-[var(--neutral-1)];
+    width: 100%;
+    height: auto;
+    padding-bottom: 45px;
+    display: block;
+    align-items: center;
+}
+
+div.links_container_1 {
+    @apply text-[14px] font-[400] flex items-center gap-[40px];
+    font-family: var(--font-inter);
+
+}
+
+
+#line {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 0.2px;
+    height: 25px;
+    margin: 0% 10% 0%;
+}
+
+div.container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding-right: 31px;
+}
+
+div.section_one {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10% 20px;
+    /*height: auto;*/
+    width: 100%;
+}
+
+div.section_two {
+    margin: 0% 10% 0%;
+    padding: 20px 0px 10px;
+    height: 60px;
+    font-size: 14px;
+    border-top: 0.2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.copyright {
+    @apply flex gap-[20px] pr-[20.5px];
+    >p {
+        @apply font-[400]
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}
+
+footer img.logo {
+    color: white;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.copyright a {
+    font-weight: 700;
+}
+
+
+/*PHONE SCREEN*/
+@media screen and (max-width: 768px) {
+    div.section_one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    div.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        padding-right: 0;
+        width: auto;
+    }
+
+    #line {
+        display: none;
+    }
+
+    .links_container_1 {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    div.copyright {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-right: 0;
+    }
+
+    div.section_two {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        margin-top: 24px;
+    }
+
+    div.icons {
+        margin-bottom: 30px;
+    }
+}
+
+/*TABLET SCREEN*/
+@media screen and (max-width: 912px) {
+
+    .container p {
+        text-align: center;
+    }
+
+    .copyright p, a {
+        text-align: center;
+    }
+
+    .links_container_1 a {
+        text-align: center;
+    }
+}

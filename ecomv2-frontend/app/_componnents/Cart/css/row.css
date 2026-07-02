@@ -1,0 +1,30 @@
+@reference "../../../globals.css";
+
+ .product-table__row {
+    @apply flex flex-row justify-between py-6 border-b-1 border-b-[var(--neutral-3)];
+}
+.product-table__row .col__main {
+    @apply flex flex-row gap-4 items-center;
+    >img {
+        @apply aspect-[5/6]
+    }
+    >.product-item__overview {
+        @apply space-y-2;
+        font-family: var(--font-inter);
+    }
+    >.product-item__overview .name {
+        @apply text-[14px] font-semibold;
+    }
+    >.product-item__overview .color {
+        @apply text-[12px] text-[var(--neutral-4)];
+    }
+    >.product-item__overview .btn.remove-btn {
+        @apply flex flex-row items-center text-[var(--neutral-4)]
+    }
+}
+.product-table__row .col__sg {
+    @apply w-[322px] flex flex-row flex-none justify-between items-center;
+    >.col__qt {
+        @apply w-[80px] h-[32px];
+    }
+}

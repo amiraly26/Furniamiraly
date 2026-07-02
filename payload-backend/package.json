@@ -1,0 +1,36 @@
+{
+  "name": "payload-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Payload CMS backend for ecomv2",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 1337",
+    "build": "next build",
+    "start": "next start -p 1337",
+    "payload": "payload",
+    "generate:types": "payload generate:types",
+    "migrate": "payload migrate",
+    "migrate:create": "payload migrate:create"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "^3.85.1",
+    "@payloadcms/next": "^3.85.1",
+    "@payloadcms/richtext-lexical": "^3.85.1",
+    "graphql": "^16.12.0",
+    "next": "15.4.11",
+    "payload": "^3.85.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

@@ -1,0 +1,133 @@
+@reference "../../globals.css";
+/*
+.bundle_section {
+    background-color: white;
+    height: 662px;
+    display: grid;
+    grid-template-areas: 
+    "livingroom bedroom"
+    "livingroom kitchen";
+    grid-template-columns: 548px 548px ;
+    grid-template-rows: 319px 319px;
+    gap: 24px;
+    justify-content: center;
+    padding-right: 128px;
+    padding-left: 128px;
+}
+
+.text p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 34px;
+    color: #31393B;
+}
+
+.text#one {
+    display: block;
+    width: fit-content;
+    padding-left: 7%;
+    padding-top: 7%;
+}
+
+.text#two, .text#three{
+    display: block;
+    width: fit-content;
+    padding-left: 7%;
+    padding-bottom: 7%;
+}
+
+a#shopnow, a#shopnow i {
+    color: black;
+}
+
+div.img {
+    display: block;
+    width: fit-content;
+}
+
+.bedroom, .livingroom, .kitchen {
+    min-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .bundle_section {
+        justify-content: center;
+        height: 769px;
+        display: grid;
+        grid-template-areas: 
+        "livingroom"
+        "bedroom"
+        "kitchen";
+        gap: 16px;
+        grid-template-rows: 377px 180px 180px;
+        grid-template-columns: 311px;
+        margin: 0;
+    }
+
+    .text {
+        display: block;
+        padding-left: 7%;
+        padding-top: 7%;
+    }
+
+    .text p {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 28px;
+        color: #31393B;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .bundle_section {
+        height: 441px;
+        display: grid;
+        grid-template-areas: 
+        "livingroom bedroom"
+        "livingroom kitchen";
+        gap: 16px;
+        grid-template-columns: 365px 365px ;
+        grid-template-rows: 213px 213px;
+        justify-content: center;
+    }
+
+    .text p {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 30px;
+        color: #31393B;
+    }
+
+}*/
+
+.bundle_section {
+    @apply mx-auto flex max-w-[1120px] flex-col px-8 gap-4 md:gap-6 lg:px-0 justify-center items-center md:items-stretch md:flex-row ;
+
+}
+@media screen and (min-width: 1368px) {
+    .bundle_section {
+        @apply h-[430px]
+    }
+}
+.bundle-featured {
+    @apply flex-1 min-w-[311px] min-h-[320px] lg:min-h-[430px] h-full bg-[#f3f5f7] rounded-[8px] pt-8 pl-8 bg-contain bg-bottom bg-no-repeat flex flex-col justify-start;
+}
+.double-bundle {
+    @apply flex-1 min-w-[311px] min-h-[320px] lg:min-h-[430px] h-full flex flex-col gap-4 md:gap-6
+}
+
+.sub-bundle {
+    @apply flex-1 bg-[#f3f5f7] rounded-[8px] bg-contain bg-right bg-no-repeat pb-8 pl-8 flex flex-col justify-end;
+}
+
+
+.bundle_section .text {
+   @apply flex flex-col gap-2 md:gap-3;
+   >p {
+    @apply text-[26px] leading-[32px] font-[500] md:text-[30px] md:leading-[36px]
+   }
+   >a { 
+    @apply flex w-[fit-content] flex flex-row gap-1 items-center text-[14px] leading-[24px] tracking-[0px] font-[500] border-b-1 text-[#31393B] md:text-[16px] md:tracking-[-0.4px];
+    font-family: var(--font-inter);
+   } 
+}

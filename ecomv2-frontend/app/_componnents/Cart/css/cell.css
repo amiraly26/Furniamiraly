@@ -1,0 +1,28 @@
+@reference "../../../globals.css";
+
+/* item cells styling*/
+.item-cell {
+    @apply w-full h-[144px] py-6 box-border flex flex-row gap-4 border-b-[2px] border-b-[var(--neutral-3)];
+}
+/*
+.product-table .item-cell {
+    @apply w-[312px] sm:w-full
+}*/
+.item-cell > img {
+    @apply aspect-[5/6]
+}
+.item-cell .item-cell__info {
+    @apply w-full flex-1 flex flex-col text-black gap-2
+}
+.item-cell .item-cell__info div[class^='row-'] {
+    @apply flex flex-row flex-none justify-between items-center;
+    font-family: var(--font-inter);
+    >.item-name, >.item-price {
+        @apply font-semibold text-[14px];
+    }
+    >.item-color {
+        @apply text-[var(--neutral-4)] text-[12px]
+    }
+    
+
+}

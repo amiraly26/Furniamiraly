@@ -1,0 +1,40 @@
+.section {
+    height: 532px;
+    background-color: grey;
+    display: flex;
+    width: 100%;
+}
+
+.background {
+    background-color: cyan;
+    height: 532px;
+    width: 50%;
+    background-image: url('/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paragraph {
+    background-color: coral;
+    height: 532px;
+    width: 50%;
+    display: block;
+    align-content: center;
+    padding-left: 72px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #31393B;
+    width: 452px;
+}
+
+.paragraph p {
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    color: #31393B;
+    width: 452px;
+}
