@@ -213,6 +213,13 @@ svg {
   text-decoration: none;
 }
 
+.admin-collection-shortcuts ~ .dashboard__label,
+.admin-collection-shortcuts ~ .collection-list,
+.admin-collection-shortcuts ~ .dashboard__wrap,
+.admin-collection-shortcuts ~ .dashboard__group {
+  display: none !important;
+}
+
 .collection-list__item a[href*="/create"],
 .dashboard__card a[href*="/create"] {
   display: inline-grid !important;
@@ -677,4 +684,15 @@ textarea:focus,
   .collection-list {
     grid-template-columns: 1fr;
   }
+}
+
+/* Hide Payload's generated dashboard collection overview. The visible collection
+   shortcuts above are the replacement, so this removes only the duplicate block. */
+.dashboard > .dashboard__label,
+.dashboard > .collection-list__label,
+.dashboard > .collection-list,
+.dashboard > .dashboard__wrap:has(.collection-list),
+.dashboard > .dashboard__group:has(.collection-list),
+.dashboard .collection-list:not(.admin-collection-shortcuts__grid) {
+  display: none !important;
 }
